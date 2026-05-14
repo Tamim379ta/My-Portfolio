@@ -3,6 +3,7 @@ import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 const ContactSection = () => {
   return (
     <section
+      data-aos="fade-up"
       id="contact"
       className="py-24 px-6 flex justify-center scroll-mt-20"
     >
@@ -39,7 +40,7 @@ const ContactSection = () => {
                 </h3>
 
                 <p className="text-zinc-400 text-sm mt-1">
-                 tamimthasan55@gmail.com
+                  tamimthasan55@gmail.com
                 </p>
               </div>
             </a>
@@ -61,7 +62,7 @@ const ContactSection = () => {
                 </h3>
 
                 <p className="text-zinc-400 text-sm mt-1">
-                 github.com/Tamim379ta
+                  github.com/Tamim379ta
                 </p>
               </div>
             </a>

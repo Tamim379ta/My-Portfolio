@@ -27,6 +27,7 @@ const SkillSection = () => {
 
   return (
     <section
+    data-aos="fade-up"
       id="skills"
       className="py-20 px-6 flex justify-center scroll-mt-20"
     >

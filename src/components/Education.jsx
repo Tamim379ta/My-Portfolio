@@ -1,6 +1,6 @@
 const EducationSection = () => {
   return (
-    <section id="education" className="py-28 px-6 flex justify-center scroll-mt-20">
+    <section data-aos="fade-up" id="education" className="py-28 px-6 flex justify-center scroll-mt-20">
       <div className="max-w-4xl w-full">
 
         {/* Glass card */}

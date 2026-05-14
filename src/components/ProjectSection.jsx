@@ -49,6 +49,7 @@ const projects = [
 const ProjectSection = () => {
   return (
     <section
+    data-aos="fade-up"
       id="projects"
       className="py-24 px-6 flex justify-center scroll-mt-20"
     >

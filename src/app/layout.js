@@ -1,10 +1,11 @@
-import {  Playwrite_GB_S } from "next/font/google";
+import { Playwrite_GB_S } from "next/font/google";
 import "./globals.css";
 import 'animate.css';
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { ShootingStars } from "@/components/ui/shooting-stars";
 import { StarsBackground } from "@/components/ui/stars-background";
+import AosProvider from "@/provider/AosProvider";
 
 
 
@@ -32,11 +33,11 @@ export default function RootLayout({ children }) {
         </div>
 
         <Navbar />
-
-        <main className="flex-1">
-          {children}
-        </main>
-
+        <AosProvider>
+          <main className="flex-1">
+            {children}
+          </main>
+        </AosProvider>
         <Footer />
       </body>
     </html>

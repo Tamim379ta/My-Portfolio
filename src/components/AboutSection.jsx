@@ -1,6 +1,6 @@
 const AboutSection = () => {
   return (
-    <section id="about" className="py-10 px-6 flex justify-center">
+    <section data-aos="fade-up" id="about" className="py-20 px-6 flex justify-center">
 
       <div className="max-w-4xl w-full">
 
