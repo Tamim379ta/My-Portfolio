@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const HeroSection = () => {
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center mt-10 px-6">
+    <section id="home" className="relative min-h-screen flex items-center justify-center mt-20 px-6">
 
       <div className="relative z-10 text-center max-w-3xl w-full">
 
@@ -39,7 +39,7 @@ const HeroSection = () => {
             }}>
               Tamim Tahsan
             </span>{" "}
-            
+
           </h1>
 
           {/* Subtitle */}
@@ -53,7 +53,7 @@ const HeroSection = () => {
             Turning ideas into real-world products.
           </p>
 
-         
+
 
           {/* Divider */}
           <div className="my-7 mx-auto w-10 h-px"
@@ -84,10 +84,21 @@ const HeroSection = () => {
           </div>
 
           {/* Scroll hint */}
-          <div className="mt-8 flex flex-col items-center gap-1 text-white/25 text-xs tracking-widest">
-            <span>scroll down</span>
-            <svg className="animate-bounce w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 9l-7 7-7-7" />
+          <div className="mt-8 flex flex-col items-center gap-3 text-white/25 text-xs tracking-widest">
+            <span>SCROLL DOWN</span>
+
+            <svg
+              className="w-4 h-4 animate-float"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M19 9l-7 7-7-7"
+              />
             </svg>
           </div>
 

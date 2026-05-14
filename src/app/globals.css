@@ -6,6 +6,7 @@
 
 @custom-variant dark (&:is(.dark *));
 
+
 @theme inline {
     --font-heading: var(--font-sans);
     --font-sans: var(--font-sans);
@@ -128,4 +129,19 @@
   html {
     @apply font-sans;
     }
+}
+
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(6px);
+  }
+}
+
+.animate-float {
+  animation: float 2s ease-in-out infinite;
 }

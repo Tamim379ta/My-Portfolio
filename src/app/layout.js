@@ -1,6 +1,6 @@
 import {  Playwrite_GB_S } from "next/font/google";
 import "./globals.css";
-
+import 'animate.css';
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { ShootingStars } from "@/components/ui/shooting-stars";
