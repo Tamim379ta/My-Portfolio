@@ -2,9 +2,9 @@ import Link from "next/link";
 
 const HeroSection = () => {
   return (
-    <section  id="home" className="relative min-h-screen flex items-center justify-center mt-20 px-6">
+    <section  id="home" className="relative  animate__fadeIn animate__animated animate__slow min-h-screen flex items-center justify-center mt-20 px-6">
 
-      <div className="relative animate__fadeIn animate__animated z-10 text-center max-w-3xl w-full">
+      <div className="relative z-10 text-center max-w-3xl w-full">
 
         {/* Glass card */}
         <div
