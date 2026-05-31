@@ -7,7 +7,7 @@ const projects = [
     description:
       "A full-stack sports facility booking platform where users can explore and reserve sports venues . The system allows facility owners to manage listings and users to book or cancel time slots in real time.",
     image: "/assets/sportnest.png",
-    tech: ["Next.js", "React", "MongoDB", "Better Auth", "JWT"],
+    tech: ["Next.js", "React", "MongoDB", "Better Auth", "JWT" ,"Node.js", "Express.js"],
     live: "https://sport-nest-client-liart.vercel.app",
     github: "https://github.com/Tamim379ta/SportNest-Client",
   },
@@ -16,7 +16,7 @@ const projects = [
     description:
       "A full-stack travel booking platform where users can explore destinations, book trips, and manage bookings with authentication and CRUD operations.",
     image: "/assets/wanderlust.png",
-    tech: ["Next.js", "Node.js", "MongoDB", "Express", "JWT"],
+    tech: ["Next.js", "Node.js", "MongoDB", "Express.js", "JWT"],
     live: "https://wanderlust-eight-topaz.vercel.app",
     github: "https://github.com/Tamim379ta/wanderlust",
   },
