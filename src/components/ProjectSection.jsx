@@ -3,12 +3,21 @@ import Link from "next/link";
 
 const projects = [
   {
+    title: "SportNest",
+    description:
+      "A full-stack sports facility booking platform where users can explore and reserve sports venues . The system allows facility owners to manage listings and users to book or cancel time slots in real time.",
+    image: "/assets/sportnest.png",
+    tech: ["Next.js", "React", "MongoDB", "Better Auth", "JWT"],
+    live: "https://sport-nest-client-liart.vercel.app",
+    github: "https://github.com/Tamim379ta/SportNest-Client",
+  },
+  {
     title: "Wanderlust",
     description:
       "A full-stack travel booking platform where users can explore destinations, book trips, and manage bookings with authentication and CRUD operations.",
     image: "/assets/wanderlust.png",
     tech: ["Next.js", "Node.js", "MongoDB", "Express", "JWT"],
-    live: "",
+    live: "https://wanderlust-eight-topaz.vercel.app",
     github: "https://github.com/Tamim379ta/wanderlust",
   },
   {
@@ -36,20 +45,20 @@ const projects = [
     github: "https://github.com/Tamim379ta/ASSIGNMENT-007",
   },
   {
-  title: "English Janala",
-  description:
-    "An English learning web application built with raw JavaScript featuring interactive UI and dynamic functionality.",
-  image: "/assets/english-janala.png",
-  tech: ["HTML", "CSS", "JavaScript"],
-  live: "https://tamim379ta.github.io/English-Janala/",
-  github: "https://github.com/Tamim379ta/English-Janala",
-},
+    title: "English Janala",
+    description:
+      "An English learning web application built with raw JavaScript featuring interactive UI and dynamic functionality.",
+    image: "/assets/english-janala.png",
+    tech: ["HTML", "CSS", "JavaScript"],
+    live: "https://tamim379ta.github.io/English-Janala/",
+    github: "https://github.com/Tamim379ta/English-Janala",
+  },
 ];
 
 const ProjectSection = () => {
   return (
     <section
-    data-aos="fade-up"
+      data-aos="fade-up"
       id="projects"
       className="py-24 px-6 flex justify-center scroll-mt-20"
     >
