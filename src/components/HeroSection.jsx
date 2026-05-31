@@ -1,108 +1,75 @@
 import Link from "next/link";
+import Card from './../provider/StyledWrapper';
+
 
 const HeroSection = () => {
   return (
-    <section  id="home" className="relative  animate__fadeIn animate__animated animate__slow min-h-screen flex items-center justify-center mt-20 px-6">
+    <section
+      id="home"
+      className="min-h-screen container mx-auto flex items-center justify-center px-6 mt-25 md:mt-10"
+    >
+      <div className="max-w-7xl w-full flex flex-col-reverse lg:flex-row items-center justify-between gap-12">
 
-      <div className="relative z-10 text-center max-w-3xl w-full">
-
-        {/* Glass card */}
-        <div
-          className="rounded-3xl px-10 py-12"
-          style={{
-            background: "rgba(255,255,255,0.05)",
-            border: "1px solid rgba(255,255,255,0.12)",
-            backdropFilter: "blur(28px)",
-            WebkitBackdropFilter: "blur(28px)",
-            boxShadow: "0 8px 40px rgba(0,0,0,0.35), inset 0 1px 0 rgba(255,255,255,0.1)",
-          }}
-        >
-
-          {/* Availability badge */}
-          <div className="inline-flex items-center gap-2 mb-6 px-4 py-1.5 rounded-full text-xs tracking-wide"
+        {/* Left Side */}
+        <div className="flex-1 text-center lg:text-left">
+          {/* Availability Badge */}
+          <div
+            className="inline-flex items-center gap-2 mb-6 px-4 py-1.5 rounded-full text-xs tracking-wide"
             style={{
               background: "rgba(120,80,255,0.18)",
               border: "1px solid rgba(120,80,255,0.35)",
               color: "rgba(180,150,255,0.95)",
-            }}>
+            }}
+          >
             <span className="w-2 h-2 rounded-full bg-purple-400 animate-pulse" />
             Available for hire
           </div>
 
-          {/* Title */}
-          <h1 className=" text-4xl md:text-6xl font-bold text-white">
-            Hi, I'm{" "}
-            <span style={{
-              background: "linear-gradient(90deg, #a07aff, #5ec3ff)",
-              WebkitBackgroundClip: "text",
-              WebkitTextFillColor: "transparent",
-            }}>
+          <h1 className="text-5xl md:text-7xl font-bold text-white leading-tight">
+            Hi, I'm{" "} <br />
+            <span className="bg-linear-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">
               Tamim Tahsan
-            </span>{" "}
-
+            </span>
           </h1>
 
-          {/* Subtitle */}
-          <p className="mt-5 text-zinc-400 text-lg md:text-xl leading-relaxed">
+          <p className="mt-6 text-zinc-400 text-lg md:text-xl max-w-2xl">
             Full Stack Developer crafting modern web experiences with
             Next.js, Node.js, Express, and MongoDB.
           </p>
 
-          {/* Tagline */}
-          <p className="mt-2 text-zinc-500 text-sm italic">
+          <p className="mt-3 text-zinc-500 italic">
             Turning ideas into real-world products.
           </p>
 
-
-
-          {/* Divider */}
-          <div className="my-7 mx-auto w-10 h-px"
-            style={{ background: "linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent)" }} />
-
-          {/* Buttons */}
-          <div className="flex flex-col md:flex-row items-center justify-center gap-4">
+          <div className="flex flex-col sm:flex-row gap-4 mt-8 justify-center lg:justify-start">
             <Link
               href="#projects"
-              className="px-7 py-3 rounded-xl text-sm font-semibold text-white transition-all duration-300 hover:-translate-y-0.5"
+              className="px-7 py-3 rounded-xl text-sm font-semibold text-white"
               style={{
-                background: "linear-gradient(135deg, rgba(160,122,255,0.85), rgba(94,195,255,0.75))",
-                boxShadow: "0 4px 20px rgba(120,80,255,0.3)",
+                background:
+                  "linear-gradient(135deg, rgba(160,122,255,0.85), rgba(94,195,255,0.75))",
               }}
             >
               View Projects
             </Link>
+
             <Link
               href="#contact"
-              className="px-7 py-3 rounded-xl text-sm font-semibold text-white/75 transition-all duration-300"
-              style={{
-                background: "rgba(255,255,255,0.06)",
-                border: "1px solid rgba(255,255,255,0.15)",
-              }}
+              className="px-7 py-3 rounded-xl text-sm font-semibold text-white border border-white/20"
             >
               Contact Me
             </Link>
           </div>
-
-          {/* Scroll hint */}
-          <div className="mt-8 flex flex-col items-center gap-3 text-white/25 text-xs tracking-widest">
-            <span>SCROLL DOWN</span>
-
-            <svg
-              className="w-4 h-4 animate-float"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M19 9l-7 7-7-7"
-              />
-            </svg>
-          </div>
-
         </div>
+
+        {/* Right Side */}
+
+        <div>
+          <Card/>
+           
+        </div>
+
+
       </div>
     </section>
   );
