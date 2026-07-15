@@ -19,7 +19,7 @@ const projects = [
       "A university library management system where students can browse, borrow, and return books with due date tracking, and admins can manage the full catalog, users, and borrow records in real time.",
     image: "/assets/bookbridge.png",
     tech: ["Next.js", "React", "MongoDB", "Better Auth", "Node.js", "Express.js", "Framer Motion"],
-    live: "https://library-management-eight-chi-66.vercel-app/",
+    live: "https://library-management-eight-chi-66.vercel.app/",
     github: "https://github.com/Tamim379ta/Library-Management-",
   },
   {
