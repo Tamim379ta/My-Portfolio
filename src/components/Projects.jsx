@@ -1,4 +1,3 @@
-"use client";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -61,6 +60,7 @@ const projects = [
 ];
 
 const ProjectSection = () => {
+
   return (
     <section
       data-aos="fade-up"
@@ -68,51 +68,34 @@ const ProjectSection = () => {
       className="py-24 px-6 flex justify-center scroll-mt-20"
     >
       <div className="max-w-6xl w-full">
-        {/* Title */}
         <div className="text-center">
           <h2 className="text-4xl font-bold text-white">Projects</h2>
-          <p className="mt-4 text-zinc-400">
-            Some projects I've worked on recently
-          </p>
+          <p className="mt-4 text-zinc-400">Some projects I've worked on recently</p>
         </div>
 
-        {/* Projects Grid — 3 columns */}
         <div className="mt-14 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((project) => (
             <div
               key={project.title}
               className="flex flex-col bg-white/5 border border-white/10 
               backdrop-blur-xl rounded-2xl overflow-hidden shadow-xl 
-              hover:border-white/20 transition duration-300"
+              hover:border-white/20 transition duration-300 cursor-pointer"
             >
-              {/* Image */}
               <div className="relative w-full h-48">
-                <Image
-                  src={project.image}
-                  alt={project.title}
-                  fill
-                  className="object-cover"
-                />
+                <Image src={project.image} alt={project.title} fill className="object-cover" />
               </div>
 
-              {/* Content wrapper with flex-grow to keep card heights uniform */}
               <div className="p-5 flex flex-col flex-grow justify-between">
                 <div>
-                  <h3 className="text-lg font-semibold text-white">
-                    {project.title}
-                  </h3>
-
+                  <h3 className="text-lg font-semibold text-white">{project.title}</h3>
                   <p className="mt-2 text-zinc-400 text-sm leading-relaxed line-clamp-3">
                     {project.description}
                   </p>
-
-                  {/* Tech stack */}
                   <div className="mt-4 flex flex-wrap gap-1.5">
                     {project.tech.map((item) => (
                       <span
                         key={item}
-                        className="px-2 py-0.5 rounded-md bg-white/10 border border-white/5 
-                        text-xs text-zinc-300"
+                        className="px-2 py-0.5 rounded-md bg-white/10 border border-white/5 text-xs text-zinc-300"
                       >
                         {item}
                       </span>
@@ -120,8 +103,9 @@ const ProjectSection = () => {
                   </div>
                 </div>
 
-                {/* Direct Action Buttons */}
-                <div className="mt-6 pt-4 border-t border-white/5 flex items-center gap-3">
+                <div
+                  className="mt-6 pt-4 border-t border-white/5 flex items-center gap-3"
+                >
                   <Link
                     href={project.live}
                     target="_blank"
@@ -142,6 +126,7 @@ const ProjectSection = () => {
           ))}
         </div>
       </div>
+
     </section>
   );
 };
