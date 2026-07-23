@@ -1,11 +1,12 @@
 import Link from "next/link";
 import Card from './../provider/StyledWrapper';
+import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 
 const HeroSection = () => {
   return (
     <section
       id="home"
-      className="min-h-screen container mx-auto flex items-center justify-center px-6 mt-25 lg:mt-15 "
+      className="min-h-screen container mx-auto flex items-center justify-center px-6 mt-25 lg:mt-15"
     >
       <div className="max-w-7xl w-full flex flex-col-reverse md:flex-row items-center justify-between gap-12">
 
@@ -40,18 +41,17 @@ const HeroSection = () => {
             Turning ideas into real-world products.
           </p>
 
+          {/* Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 mt-8 justify-center lg:justify-start">
             <Link
               href="#projects"
               className="px-7 py-3 rounded-xl text-sm font-semibold text-white text-center"
               style={{
-                background:
-                  "linear-gradient(135deg, rgba(160,122,255,0.85), rgba(94,195,255,0.75))",
+                background: "linear-gradient(135deg, rgba(160,122,255,0.85), rgba(94,195,255,0.75))",
               }}
             >
               View Projects
             </Link>
-
             <a
               href="/cv.pdf"
               download
@@ -62,6 +62,31 @@ const HeroSection = () => {
               }}
             >
               Download CV
+            </a>
+          </div>
+
+          {/* Social Links */}
+          <div className="flex items-center gap-5 mt-8 justify-center lg:justify-start">
+            <a
+              href="https://github.com/Tamim379ta"
+              target="_blank"
+              className="text-zinc-400 hover:text-white transition-all duration-300 hover:scale-110"
+            >
+              <FaGithub size={26} />
+            </a>
+            <a
+              href="https://linkedin.com/in/tamimtahsan"
+              target="_blank"
+              className="text-zinc-400 hover:text-blue-400 transition-all duration-300 hover:scale-110"
+            >
+              <FaLinkedin size={26} />
+            </a>
+            <a
+              href="https://wa.me/8801870618919"
+              target="_blank"
+              className="text-zinc-400 hover:text-green-400 transition-all duration-300 hover:scale-110"
+            >
+              <FaWhatsapp size={26} />
             </a>
           </div>
         </div>
