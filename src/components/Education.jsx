@@ -85,7 +85,10 @@ const EducationSection = () => {
                   Secondary School Certificate (SSC)
                 </h3>
                 <p className="text-zinc-400 text-sm mt-1">
-                  Science Background
+                  Bishwa Zaker Monjil Government High School
+                </p>
+                 <p className="text-zinc-400 text-sm mt-1">
+                  Science
                 </p>
                 <p className="text-zinc-600 text-xs mt-1 tracking-wide uppercase">
                   Completed

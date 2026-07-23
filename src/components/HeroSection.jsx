@@ -1,12 +1,11 @@
 import Link from "next/link";
 import Card from './../provider/StyledWrapper';
 
-
 const HeroSection = () => {
   return (
     <section
       id="home"
-      className="min-h-screen container mx-auto flex items-center justify-center px-6 mt-25 "
+      className="min-h-screen container mx-auto flex items-center justify-center px-6 mt-25"
     >
       <div className="max-w-7xl w-full flex flex-col-reverse md:flex-row items-center justify-between gap-12">
 
@@ -44,7 +43,7 @@ const HeroSection = () => {
           <div className="flex flex-col sm:flex-row gap-4 mt-8 justify-center lg:justify-start">
             <Link
               href="#projects"
-              className="px-7 py-3 rounded-xl text-sm font-semibold text-white"
+              className="px-7 py-3 rounded-xl text-sm font-semibold text-white text-center"
               style={{
                 background:
                   "linear-gradient(135deg, rgba(160,122,255,0.85), rgba(94,195,255,0.75))",
@@ -53,22 +52,24 @@ const HeroSection = () => {
               View Projects
             </Link>
 
-            <Link
-              href="#contact"
-              className="px-7 py-3 rounded-xl text-sm font-semibold text-white border border-white/20"
+            <a
+              href="/cv.pdf"
+              download
+              className="px-7 py-3 rounded-xl text-sm font-semibold text-white text-center border border-white/20 hover:border-white/40 transition-all duration-300"
+              style={{
+                background: "rgba(255,255,255,0.06)",
+                backdropFilter: "blur(8px)",
+              }}
             >
-              Contact Me
-            </Link>
+              Download CV
+            </a>
           </div>
         </div>
 
         {/* Right Side */}
-
         <div>
-          <Card/>
-           
+          <Card />
         </div>
-
 
       </div>
     </section>

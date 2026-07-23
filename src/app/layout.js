@@ -1,4 +1,4 @@
-import { Playwrite_GB_S } from "next/font/google";
+import { DM_Sans } from "next/font/google";
 import "./globals.css";
 import 'animate.css';
 import Navbar from "@/components/Navbar";
@@ -7,11 +7,10 @@ import { ShootingStars } from "@/components/ui/shooting-stars";
 import { StarsBackground } from "@/components/ui/stars-background";
 import AosProvider from "@/provider/AosProvider";
 
-
-
-const playwrite = Playwrite_GB_S({
+const dmSans = DM_Sans({
   subsets: ["latin"],
-})
+  weight: ["300", "400", "500", "600", "700"],
+});
 
 export const metadata = {
   title: "Tamim Portfolio",
@@ -22,7 +21,7 @@ export default function RootLayout({ children }) {
   return (
     <html
       lang="en"
-      className={`${playwrite.className} scroll-smooth h-full antialiased`}
+      className={`${dmSans.className} scroll-smooth h-full antialiased`}
     >
       <body className="min-h-full flex flex-col relative bg-black text-white">
 
