@@ -5,7 +5,7 @@ const HeroSection = () => {
   return (
     <section
       id="home"
-      className="min-h-screen container mx-auto flex items-center justify-center px-6 mt-25"
+      className="min-h-screen container mx-auto flex items-center justify-center px-6 mt-25 lg:mt-15 "
     >
       <div className="max-w-7xl w-full flex flex-col-reverse md:flex-row items-center justify-between gap-12">
 
