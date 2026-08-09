@@ -1,5 +1,23 @@
 export const projects = [
   {
+    slug: "sparkfund",
+    title: "SparkFund",
+    description:
+      "A full-stack crowdfunding platform where supporters can discover and fund campaigns using a credit economy, creators can launch and manage fundraising campaigns, and admins oversee the platform with an approval workflow and analytics dashboard.",
+    image: "/assets/sparkfund.png",
+    tech: ["Next.js", "React", "MongoDB", "Better Auth", "Stripe", "Node.js", "Express.js"],
+    live: "https://spark-fund-lime.vercel.app/",
+    github: "https://github.com/Tamim379ta/SparkFund",
+    challenges: [
+      "Building a credit economy system where supporters purchase credits via Stripe and spend them on campaigns, requiring careful transaction handling to prevent double-spending.",
+      "Implementing an admin approval workflow for campaigns, ensuring creators cannot go live without review while keeping the dashboard state in sync across roles.",
+    ],
+    future: [
+      "Add campaign update posts so creators can share progress with their backers.",
+      "Introduce a notification system to alert supporters when a campaign they funded reaches its goal.",
+    ],
+  },
+  {
     slug: "legalease",
     title: "LegalEase",
     description:
